@@ -58,9 +58,9 @@ const adddetails = () => {
   };
 
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: "white" }}>
+    <ScrollView style={{ flex: 1, backgroundColor: "#0f0b3d" }}>
       <View style={{ padding: 10 }}>
-        <Text style={{ fontSize: 17, fontWeight: "bold" }}>
+        <Text style={{ fontSize: 17, fontWeight: "bold", color:"white" }}>
           Add a New Employee
         </Text>
 
@@ -71,13 +71,14 @@ const adddetails = () => {
             borderWidth: 1,
             marginTop: 10,
             borderRadius: 5,
+            color:"white"
           }}
           placeholder="Bangladesh"
-          placeholderTextColor={"black"}
+          placeholderTextColor={"white"}
         />
 
         <View style={{ marginVertical: 10 }}>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>
+          <Text style={{ fontSize: 17, fontWeight: "bold", color:"white" }}>
             Full Name (First and last Name)
           </Text>
           <TextInput
@@ -91,12 +92,12 @@ const adddetails = () => {
               borderRadius: 5,
             }}
             placeholder="enter your name"
-            placeholderTextColor={"black"}
+            placeholderTextColor={"white"}
           />
         </View>
 
         <View>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>Employee Id</Text>
+          <Text style={{ fontSize: 17, fontWeight: "bold", color:"white" }}>Employee Id</Text>
           <TextInput
             value={employeeId}
             onChangeText={(text) => setEmployeeId(text)}
@@ -108,12 +109,12 @@ const adddetails = () => {
               borderRadius: 5,
             }}
             placeholder="Employee Id"
-            placeholderTextColor={"black"}
+            placeholderTextColor={"white"}
           />
         </View>
 
         <View style={{ marginVertical: 10 }}>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>Designation</Text>
+          <Text style={{ fontSize: 17, fontWeight: "bold", color:"white" }}>Designation</Text>
           <TextInput
             value={designation}
             onChangeText={(text) => setDesignation(text)}
@@ -125,12 +126,12 @@ const adddetails = () => {
               borderRadius: 5,
             }}
             placeholder="Designation"
-            placeholderTextColor={"black"}
+            placeholderTextColor={"white"}
           />
         </View>
 
         <View>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>
+          <Text style={{ fontSize: 17, fontWeight: "bold", color:"white" }}>
             Mobile Number
           </Text>
           <TextInput
@@ -144,12 +145,12 @@ const adddetails = () => {
               borderRadius: 5,
             }}
             placeholder="Mobile No"
-            placeholderTextColor={"black"}
+            placeholderTextColor={"white"}
           />
         </View>
 
         <View style={{ marginVertical: 10 }}>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>
+          <Text style={{ fontSize: 17, fontWeight: "bold", color:"white" }}>
             Date of Birth
           </Text>
           <TextInput
@@ -163,12 +164,12 @@ const adddetails = () => {
               borderRadius: 5,
             }}
             placeholder="Enter Date of Birth"
-            placeholderTextColor={"black"}
+            placeholderTextColor={"white"}
           />
         </View>
 
         <View>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>Joining Date</Text>
+          <Text style={{ fontSize: 17, fontWeight: "bold", color:"white" }}>Joining Date</Text>
           <TextInput
             value={joiningDate}
             onChangeText={(text) => setJoiningDate(text)}
@@ -180,7 +181,7 @@ const adddetails = () => {
               borderRadius: 5,
             }}
             placeholder="Joining Date"
-            placeholderTextColor={"black"}
+            placeholderTextColor={"white"}
           />
         </View>
         <View
@@ -191,11 +192,11 @@ const adddetails = () => {
             marginTop: 10,
           }}
         >
-          <Text>Active Employee</Text>
-          <Text>True</Text>
+          <Text style={{color:"white"}} >Active Employee</Text>
+          <Text style={{color:"white"}}>True</Text>
         </View>
         <View style={{ marginVertical: 10 }}>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>Salary</Text>
+          <Text style={{ fontSize: 17, fontWeight: "bold", color:"white" }}>Salary</Text>
           <TextInput
             value={salary}
             onChangeText={(text) => setSalary(text)}
@@ -207,12 +208,12 @@ const adddetails = () => {
               borderRadius: 5,
             }}
             placeholder="Enter Salary"
-            placeholderTextColor={"black"}
+            placeholderTextColor={"white"}
           />
         </View>
 
         <View>
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}>Address</Text>
+          <Text style={{ fontSize: 17, fontWeight: "bold", color:"white" }}>Address</Text>
           <TextInput
             value={address}
             onChangeText={(text) => setAddress(text)}
@@ -224,19 +225,22 @@ const adddetails = () => {
               borderRadius: 5,
             }}
             placeholder="Enter Address"
-            placeholderTextColor={"black"}
+            placeholderTextColor={"white"}
           />
         </View>
 
         <Pressable
           onPress={handleRegister}
           style={{
-            backgroundColor: "#ABCABA",
+            backgroundColor: "",
             padding: 10,
             marginTop: 20,
             justifyContent: "center",
             alignItems: "center",
             borderRadius: 5,
+            border: "white",
+            borderWidth: 4,
+            borderColor:"white"
           }}
         >
           <Text style={{ fontWeight: "bold", color: "white" }}>
