@@ -1,5 +1,7 @@
 import { Pressable, StyleSheet, Text, View, TextInput } from "react-native";
 import React, { useEffect, useState } from "react";
+import { StatusBar } from 'expo-status-bar';
+
 import axios from "axios";
 import { Ionicons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
@@ -23,12 +25,12 @@ const employees = () => {
   }, []);
   console.log(employees);
   return (
-    <View style={{ flex: 1, backgroundColor: "white" }}>
+    <View style={{ flex: 1, backgroundColor: "#e9daf0", }}>
       <View
         style={{
           flexDirection: "row",
           alignItems: "center",
-          backgroundColor: "white",
+          backgroundColor: "#e9daf0",
         }}
       >
         <Ionicons
@@ -44,7 +46,7 @@ const employees = () => {
             alignItems: "center",
             marginHorizontal: 7,
             gap: 10,
-            backgroundColor: "white",
+            backgroundColor: "#e9daf0",
             borderRadius: 3,
             height: 40,
             flex: 1,

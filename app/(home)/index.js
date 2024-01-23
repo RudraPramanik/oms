@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, ScrollView, Pressable } from "react-native";
 import React from "react";
+import { StatusBar } from 'expo-status-bar';
 import {
   Entypo,
   Feather,
@@ -14,7 +15,8 @@ const index = () => {
   const router = useRouter();
   return (
     <ScrollView>
-      <LinearGradient colors={["#7F7FD5", "#E9E4FO"]} style={{ flex: 1 }}>
+      <StatusBar backgroundColor="#c2f0ea" translucent={false} />
+      <LinearGradient colors={["#c2f0ea", "#c2f0ea"]} style={{ flex: 1, marginTop:-10 }}>
         <View style={{ padding: 12 }}>
           <View
             style={{
@@ -35,17 +37,25 @@ const index = () => {
               flexDirection: "row",
               alignItems: "center",
               gap: 20,
+              
             }}
           >
             <Pressable
             onPress={()=>router.push("/(home)/employees")}
               style={{
-                backgroundColor: "#D3cce3",
+                backgroundColor: "#a7d1cc",
                 padding: 12,
-                borderRadius: 6,
                 alignItems: "center",
                 justifyContent: "center",
                 flex: 1,
+                borderWidth:1,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
               }}
             >
               <View
@@ -65,13 +75,25 @@ const index = () => {
               </Text>
             </Pressable>
             <Pressable
+            onPress={()=>router.push("/(home)/markattendence")}
               style={{
-                backgroundColor: "#D3cce3",
+                backgroundColor:"#a7d1cc",
                 padding: 12,
-                borderRadius: 6,
                 alignItems: "center",
                 justifyContent: "center",
                 flex: 1,
+                padding: 12,
+                alignItems: "center",
+                justifyContent: "center",
+                flex: 1,
+                borderWidth:1,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
               }}
             >
               <View
@@ -95,19 +117,28 @@ const index = () => {
           <View
             style={{
               marginTop: 20,
-              backgroundColor: "white",
+              backgroundColor: "#c2f0ea",
               paddingHorizontal: 10,
               paddingVertical: 10,
               borderRadius: 7,
+              borderColor:""
             }}
           >
             <Pressable
               style={{
-                backgroundColor: "#BE93C5",
+                backgroundColor: "#a7d1cc",
                 borderRadius: 6,
                 padding: 10,
                 flexDirection: "row",
                 alignItems: "center",
+                borderWidth:1.5,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
               }}
             >
               <View
@@ -147,13 +178,22 @@ const index = () => {
               </View>
             </Pressable>
             <Pressable
+            onPress={()=>router.push("/(home)/summary")}
               style={{
-                backgroundColor: "#BE93C5",
                 borderRadius: 6,
                 padding: 10,
                 flexDirection: "row",
                 alignItems: "center",
                 marginVertical: 10,
+                backgroundColor: "#a7d1cc",
+                borderWidth:1.5,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
               }}
             >
               <View
@@ -199,6 +239,15 @@ const index = () => {
                 padding: 10,
                 flexDirection: "row",
                 alignItems: "center",
+                backgroundColor: "#a7d1cc",
+                borderWidth:1.5,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
               }}
             >
               <View
@@ -245,6 +294,15 @@ const index = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 marginVertical: 10,
+                backgroundColor: "#a7d1cc",
+                borderWidth:1.5,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
               }}
             >
               <View
@@ -302,6 +360,15 @@ const index = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 flex: 1,
+                backgroundColor: "#a7d1cc",
+                borderWidth:1.5,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
 
               }}
             >
@@ -313,6 +380,7 @@ const index = () => {
                   backgroundColor: "white",
                   alignItems: "center",
                   justifyContent: "center",
+                  
                 }}
               >
                 <MaterialCommunityIcons
@@ -331,6 +399,15 @@ const index = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 flex: 1,
+                backgroundColor: "#a7d1cc",
+                borderWidth:1.5,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
 
               }}
             >
@@ -363,12 +440,20 @@ const index = () => {
           >
             <View
               style={{
-                backgroundColor: "#f79d00",
                 borderRadius: 6,
                 padding: 12,
                 alignItems: "center",
                 justifyContent: "center",
                 flex: 1,
+                backgroundColor: "#a7d1cc",
+                borderWidth:1.5,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
 
               }}
             >
@@ -398,6 +483,15 @@ const index = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 flex: 1,
+                backgroundColor: "#a7d1cc",
+                borderWidth:1.5,
+                borderRadius: 8,
+                borderColor: '#b6c2c0',
+                shadowColor: 'black',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.6,
+                shadowRadius: 4,
+                elevation: 5,
 
               }}
             >
@@ -421,6 +515,13 @@ const index = () => {
             </View>
           </View>
           {/*  */}
+        </View>
+        <View
+        style={{
+          height:48,
+          backgroundColor:"#c2f0ea"
+        }}>
+
         </View>
       </LinearGradient>
     </ScrollView>
