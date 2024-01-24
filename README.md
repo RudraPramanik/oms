@@ -1,1 +1,1 @@
-Office Management system with react native
+Fullstack Office Management system with react native, ExpressJS, MongoDB
