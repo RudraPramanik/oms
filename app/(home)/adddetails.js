@@ -233,7 +233,7 @@ const adddetails = () => {
           onPress={handleRegister}
           style={{
             backgroundColor: "",
-            padding: 10,
+            padding: 8,
             marginTop: 20,
             justifyContent: "center",
             alignItems: "center",
